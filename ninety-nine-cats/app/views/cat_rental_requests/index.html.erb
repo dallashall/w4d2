@@ -1,0 +1,11 @@
+<h1>Rental Requests</h1>
+
+
+<% @rentals.each do |rental| %>
+<ul>
+  <li> <%= rental.cat_id %> </li>
+  <li> <%= rental.start_date %> </li>
+  <li> <%= rental.end_date %> </li>
+  <li> <%= rental.status %> </li>
+</ul>
+<% end %>

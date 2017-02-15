@@ -1,0 +1,22 @@
+<h2><%= @cat.name %></h2>
+<h3><%= @cat.birth_date.to_s(:db => '%Y-%m-%d') %></h3>
+<h3><%= @cat.color %></h3>
+<h3><%= @cat.sex %></h3>
+<p> <%= @cat.description %></p>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Birth Date</th>
+    <th>Color</th>
+    <th>Sex</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><%= @cat.name %></td>
+    <td><%= @cat.birth_date.to_s(db: '%Y-%m-%d') %></td>
+    <td><%= @cat.color %></td>
+    <td><%= @cat.sex %></td>
+    <td><%= @cat.description %></td>
+  </tr>
+</table>
